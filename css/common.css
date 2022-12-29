@@ -1,0 +1,141 @@
+/* font - Nanum Gothic */
+@font-face {
+  font-family: 'Nanum Gothic';
+  src: url('../fonts/NanumGothic-Regular.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Nanum Gothic';
+  src: url('../fonts/NanumGothic-Bold.woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Nanum Gothic';
+  src: url('../fonts/NanumGothic-ExtraBold.woff2');
+  font-weight: 800;
+}
+
+body {
+  min-width: 320px;
+  font-family: 'Nanum Gothic';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.35em;
+  color: #222;
+}
+
+/* skip-nav */
+#skip-nav {
+  position: relative;
+  z-index: 100;
+}
+
+#skip-nav a {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 300px;
+  background: #333;
+  text-align: center;
+  padding: 2px 6px 0 0;
+  font-size: 13px;
+  line-height: 26px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+#skip-nav a:focus {
+  top: 0;
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.common-inner {
+  position: relative;
+  width: 1152px;
+  margin: 0 auto;
+}
+
+.inner {
+  position: relative;
+  width: 1152px;
+  margin: 0 auto;
+}
+
+.sc-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.35em;
+}
+
+.btn {
+  margin: 0;
+  cursor: pointer;
+  border: 0;
+  text-align: center;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+select,
+input {
+  font-size: 16px;
+}
+
+input,
+select,
+textarea {
+  font-family: 'Nanum Gothic';
+  color: #767676;
+}
+
+input[type='password'],
+input[type='text'] {
+  width: 100%;
+  height: 40px;
+  line-height: 38px;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+select {
+  background: url("../img/select_arrow.png") no-repeat no-repeat 96% center;
+  background-size: 8px auto;
+}
+
+/* icon */
+i[class^="ico-"],
+i[class*="ico-"] {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* storage */
+.sc-event .link-more,
+#header .group-gnb .logo a::before,
+#header .group-search .btn-search .ico-search,
+.sc-news .link-all,
+.sc-sidebanner .btn-prev .ico-btn,
+.sc-sidebanner .btn-next .ico-btn,
+.sc-sidebanner .btn-control .ico-control,
+#footer .call-area .info-box::before {
+  background-image: url("../img/sp_bg.png");
+  background-size: 300px 300px;
+  background-repeat: no-repeat;
+}
+
+.sc-visual .slide-title .ico-news,
+.sc-visual .slide-title .ico-join {
+  background-image: url("../img/icon_main.png");
+  background-size: 300px 300px;
+  background-repeat: no-repeat;
+}
