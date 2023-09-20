@@ -50,13 +50,15 @@ body {
   top: 0;
 }
 
-.blind {
+/* IR */
+.hide {
+  overflow: hidden;
+  display: block;
   position: absolute;
+  border: 0;
   width: 1px;
   height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 .common-inner {
